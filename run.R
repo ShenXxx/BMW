@@ -24,4 +24,5 @@ m <- ncol(genotype)
 ys <- as.numeric(as.matrix(phenotype[,2]))
 X0 <- matrix(1, n)
 X0 <- cbind(matrix(1, n), PC)
-glm_wls_c(y = ys, X = X0, genotype, weights = weights)
+results <- glm_wls_c(y = ys, X = X0, genotype, weights = weights)
+results

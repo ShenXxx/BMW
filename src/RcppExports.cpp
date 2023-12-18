@@ -12,17 +12,16 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
 // glm_wls_c
-SEXP glm_wls_c(const arma::vec& y, const arma::mat& X, SEXP pBigMat, const arma::vec& weights, const int threads);
-RcppExport SEXP _RcppTest_glm_wls_c(SEXP ySEXP, SEXP XSEXP, SEXP pBigMatSEXP, SEXP weightsSEXP, SEXP threadsSEXP) {
+// template <typename T> Rcpp::List glm_wls_c(const arma::vec& y, const arma::mat& X, const arma::mat& geno, const arma::vec& weights);
+RcppExport SEXP _RcppTest_glm_wls_c(SEXP ySEXP, SEXP XSEXP, SEXP genoSEXP, SEXP weightsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< const arma::vec& >::type y(ySEXP);
     Rcpp::traits::input_parameter< const arma::mat& >::type X(XSEXP);
-    Rcpp::traits::input_parameter< SEXP >::type pBigMat(pBigMatSEXP);
+    Rcpp::traits::input_parameter< const arma::mat& >::type geno(genoSEXP);
     Rcpp::traits::input_parameter< const arma::vec& >::type weights(weightsSEXP);
-    Rcpp::traits::input_parameter< const int >::type threads(threadsSEXP);
-    rcpp_result_gen = Rcpp::wrap(glm_wls_c(y, X, pBigMat, weights, threads));
+    rcpp_result_gen = Rcpp::wrap(glm_wls_c(y, X, geno, weights));
     return rcpp_result_gen;
 END_RCPP
 }
@@ -37,7 +36,7 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_RcppTest_glm_wls_c", (DL_FUNC) &_RcppTest_glm_wls_c, 5},
+    {"_RcppTest_glm_wls_c", (DL_FUNC) &_RcppTest_glm_wls_c, 4},
     {"_RcppTest_arma_test", (DL_FUNC) &_RcppTest_arma_test, 0},
     {NULL, NULL, 0}
 };
