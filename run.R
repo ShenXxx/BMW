@@ -9,7 +9,8 @@ library(rMVP)
 #          filePC=TRUE,
 #          out="mvp.plink"
 # )
-genotype <- attach.big.matrix("/Users/shenxiong/Desktop/RcppTest/data/mvp.plink.geno.desc")
+genotype <- as.matrix(attach.big.matrix("/Users/shenxiong/Desktop/RcppTest/data/mvp.plink.geno.desc"))
+genotype <- t(genotype)
 map <- read.table("/Users/shenxiong/Desktop/RcppTest/data/mvp.plink.geno.map", header = TRUE)
 Kinship <- attach.big.matrix("/Users/shenxiong/Desktop/RcppTest/data/mvp.plink.kin.desc")
 PC <- attach.big.matrix("/Users/shenxiong/Desktop/RcppTest/data/mvp.plink.pc.desc")
@@ -18,9 +19,9 @@ weights = rnorm(281)
 weights = as.matrix(weights)
 
 
-n <- ncol(genotype)
-m <- nrow(genotype)
+n <- nrow(genotype)
+m <- ncol(genotype)
 ys <- as.numeric(as.matrix(phenotype[,2]))
 X0 <- matrix(1, n)
 X0 <- cbind(matrix(1, n), PC)
-glm_wls_c(y = ys, X = X0, genotype@address, weights = weights,threads = 1)
+glm_wls_c(y = ys, X = X0, genotype, weights = weights)

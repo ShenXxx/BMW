@@ -1,8 +1,8 @@
 #include <iostream>
-#include <RcppArmadillo.h>
-// #include "mvp_omp.h"
+#include "/Users/shenxiong/Desktop/RcppTest/include/RcppArmadillo.h"
+#include "/Users/shenxiong/Desktop/RcppTest/include/mvp_omp.h"
 // #include <bigmemory/MatrixAccessor.hpp>
-// #include <bigmemory/BigMatrix.h>
+// #include <BigMatrix.h>
 
 
 // [[Rcpp::plugins(cpp11)]]
