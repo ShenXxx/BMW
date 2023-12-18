@@ -1,0 +1,66 @@
+[
+    {
+        "file": "/Users/shenxiong/Desktop/RcppTest/src/armaTest.cpp",
+        "file_last_write": 1702804039.0,
+        "definitions": [
+            {
+                "usr": "c:@F@arma_test#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "arma_test",
+                "file": "/Users/shenxiong/Desktop/RcppTest/src/armaTest.cpp",
+                "line": 12,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/Users/shenxiong/Desktop/RcppTest/src/rcpparma_hello_world.cpp",
+        "file_last_write": 1702802889.0,
+        "definitions": [
+            {
+                "usr": "c:@F@rcpparma_hello_world#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rcpparma_hello_world",
+                "file": "/Users/shenxiong/Desktop/RcppTest/src/rcpparma_hello_world.cpp",
+                "line": 18,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rcpparma_outerproduct#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rcpparma_outerproduct(const arma::colvec &)",
+                "file": "/Users/shenxiong/Desktop/RcppTest/src/rcpparma_hello_world.cpp",
+                "line": 30,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rcpparma_innerproduct#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rcpparma_innerproduct(const arma::colvec &)",
+                "file": "/Users/shenxiong/Desktop/RcppTest/src/rcpparma_hello_world.cpp",
+                "line": 38,
+                "column": 8,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rcpparma_bothproducts#&1$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rcpparma_bothproducts(const arma::colvec &)",
+                "file": "/Users/shenxiong/Desktop/RcppTest/src/rcpparma_hello_world.cpp",
+                "line": 47,
+                "column": 12,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]

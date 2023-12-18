@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/Library/Frameworks/R.framework/Versions/Current/Resources/include",
+                "/Library/Frameworks/R.framework/Versions/Current/Resources/library/Rcpp/include",
+                "/Library/Frameworks/R.framework/Versions/Current/Resources/library/RcppArmadillo/include",
+                "/Library/Frameworks/R.framework/Versions/Current/Resources/library/bigmemory/include"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,26 @@
+{
+    "id": "FA203A8E",
+    "path": "~/Desktop/RcppTest/src/rcpparma_hello_world.cpp",
+    "project_path": "src/rcpparma_hello_world.cpp",
+    "type": "cpp",
+    "hash": "4062768404",
+    "contents": "",
+    "dirty": false,
+    "created": 1702800301222.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "48,46",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1702802889,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1702802889,
+    "read_only": false,
+    "read_only_alternatives": []
+}
